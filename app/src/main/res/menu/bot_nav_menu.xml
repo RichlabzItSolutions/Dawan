@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botnav_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_feather_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/botnav_trending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/increase_up_profit_icon"
+        android:title="Trending" />
+    <item
+        android:id="@+id/botnav_saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_bookmark_24"
+        android:title="Saved" />
+    <item
+        android:id="@+id/botnav_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/username_icon"
+        android:title="Account" />
+</menu>

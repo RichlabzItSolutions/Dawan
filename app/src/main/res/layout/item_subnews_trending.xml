@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_71sdp"
+        android:layout_height="@dimen/_53sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:src="@drawable/sample3" />
+
+    <TextView
+        android:id="@+id/tv_heading2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoslab_medium"
+        android:paddingEnd="@dimen/_14sdp"
+        android:layout_toRightOf="@id/imageView3"
+        android:text="Ruto: Kenya looma soo qaadan doono fiiso laga ilaabo Janaayo 2024"
+        android:textColor="#000000"
+        android:layout_alignTop="@id/imageView3"
+        android:layout_alignBottom="@id/imageView3"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_11ssp" />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:text="December 20, 2023"
+        android:textColor="#805A5A59"
+        android:textSize="@dimen/_9ssp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:text="Share"
+        android:textColor="#805A5A59"
+        android:textSize="@dimen/_9ssp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_19sdp"/>
+
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/tv_date"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:background="#18707070" />
+</RelativeLayout>

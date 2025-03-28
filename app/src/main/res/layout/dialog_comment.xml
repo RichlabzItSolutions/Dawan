@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dawan.utils.CustomRecyclerView
+        android:id="@+id/rv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/_150sdp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_round_corner"
+            android:hint="Comment..."
+            android:paddingTop="@dimen/_14sdp"
+            android:paddingBottom="@dimen/_14sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:fontFamily="@font/lato_regular"
+            android:layout_weight="1"
+            android:textSize="@dimen/_11ssp"/>
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_send_24"
+            android:padding="@dimen/_7sdp"
+            android:background="#AD1916"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

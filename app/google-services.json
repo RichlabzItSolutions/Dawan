@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "799794127385",
+    "project_id": "dawan-a1ddc",
+    "storage_bucket": "dawan-a1ddc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799794127385:android:9b978605a9fbe9f8208088",
+        "android_client_info": {
+          "package_name": "com.dawan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd45U5HtrJ2V64tovXjcfz8udtoOo9CtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

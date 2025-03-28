@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/closeMaId"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/Liner">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Enter Mobile Number"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner_service">
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/etMobileNumberID"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/username_icon"
+            android:textSize="14sp"
+            android:inputType="phone"
+            android:hint="Enter Mobile Number"
+            android:textColorHint="#848484"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="#F7F8FA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/username_icon"
+            android:src="@drawable/ic_phone"
+            android:layout_width="35dp"
+            android:layout_height="42dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/proceedToPayId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="Proceed to pay"
+        android:background="@drawable/custom_tab_indicator"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>

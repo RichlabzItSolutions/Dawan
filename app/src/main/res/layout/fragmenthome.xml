@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/_91sdp"
+        android:layout_height="@dimen/_23sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:src="@drawable/logo"/>
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/baseline_notifications_24"/>
+    <TextView
+        android:id="@+id/tv_notification_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:textSize="@dimen/_6ssp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@id/iv_notification"
+        android:layout_alignRight="@id/iv_notification"
+        android:background="@drawable/circle"
+        android:translationX="@dimen/_minus3sdp"
+        android:fontFamily="@font/encodesans_semibold"
+        android:translationY="@dimen/_minus6sdp"/>
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="@drawable/round_corner_5dp"
+        android:drawableTint="#848484"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="What would you like to search?"
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_19sdp"
+        android:textColorHint="#9E9E9E"
+        android:textSize="@dimen/_11ssp"
+        android:layout_below="@id/iv_notification"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_search_24"
+        android:layout_alignRight="@id/et_search"
+        android:layout_alignTop="@id/et_search"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_alignBottom="@id/et_search"/>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/iv_search"
+    android:layout_alignStart="@id/et_search"
+    android:layout_alignEnd="@id/et_search"
+    android:layout_marginTop="@dimen/_14sdp"
+    android:id="@+id/rv_tabs"/>
+    <TableRow
+        android:id="@+id/tr_tabs"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_search"
+        android:layout_alignStart="@id/et_search"
+        android:layout_alignEnd="@id/et_search"
+        android:layout_marginTop="@dimen/_14sdp">
+
+        <TextView
+            android:id="@+id/tab0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_tab_indicator"
+            android:fontFamily="@font/robotoslab_medium"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Latest News"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoslab_medium"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Premium Post"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoslab_medium"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="World News"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoslab_medium"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Business"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoslab_medium"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Trending"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp" />
+
+
+    </TableRow>
+
+    <com.dawan.utils.CustomRecyclerView
+        android:id="@+id/rv_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rv_tabs"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/NO_data_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#805A5A59"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone"
+        android:layout_below="@id/rv_tabs"
+        android:layout_marginTop="17dp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+         />
+
+</RelativeLayout>

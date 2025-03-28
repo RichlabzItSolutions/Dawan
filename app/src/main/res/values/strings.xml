@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dawan</string>
+    <string-array name="select_querry">
+        <item>Select Query</item>
+        <item>Select Query1</item>
+        <item>Select Query2</item>
+        <item>Select Query3</item>
+    </string-array>
+
+</resources>

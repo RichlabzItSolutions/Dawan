@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_sub_news"
+        android:layout_width="@dimen/_71sdp"
+        android:layout_height="@dimen/_53sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample3" />
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="@dimen/_71sdp"
+        android:layout_height="@dimen/_53sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:alpha="0.7"
+        android:visibility="gone"
+        android:src="@drawable/video_play_icon" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_material_keyboard_arrow_right"
+        android:fontFamily="@font/robotoslab_medium"
+        android:paddingEnd="@dimen/_14sdp"
+        android:layout_toRightOf="@id/iv_sub_news"
+        android:text="Ruto: Kenya looma soo qaadan doono fiiso laga ilaabo Janaayo 2024"
+        android:textColor="#000000"
+        android:layout_alignTop="@id/iv_sub_news"
+        android:layout_alignBottom="@id/iv_sub_news"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_11ssp" />
+    <ImageView
+        android:id="@+id/iv_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_bookmark_remove_24"
+        android:padding="@dimen/_3sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:tint="#AD1916" />
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/iv_sub_news"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:background="#18707070" />
+</RelativeLayout>

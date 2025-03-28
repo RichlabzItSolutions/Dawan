@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_heading2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:drawableRight="@drawable/icon_material_keyboard_arrow_right"
+        android:fontFamily="@font/robotoslab_medium"
+        android:paddingEnd="@dimen/_14sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:text="Ruto: Kenya looma soo qaadan doono fiiso\nlaga ilaabo Janaayo 2024"
+        android:textColor="#000000"
+        android:textSize="@dimen/_12ssp" />
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/tv_heading2"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="#18707070" />
+</RelativeLayout>

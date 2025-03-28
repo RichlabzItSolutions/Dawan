@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:drawableStart="@drawable/baseline_arrow_back_24"
+                android:drawablePadding="@dimen/_12sdp"
+                android:drawableTint="#000000"
+                android:fontFamily="@font/robotoslab_semibold"
+                android:gravity="center"
+                android:text="My Account"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_28sdp"
+                android:fontFamily="@font/robotoslab_semibold"
+                android:text="Account"
+                android:textColor="#AC1916" />
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_account"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_material_keyboard_arrow_right"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Log in to your Dawan Account"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_create_Acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_login"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_material_keyboard_arrow_right"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Create a free Dawan Account"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_saved_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_create_Acc"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:text="Saved Stories"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Find your saved articles, videos &amp; audios here"
+                    android:textColor="#5A5A59" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_account"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_material_keyboard_arrow_right"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Logout"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_app_pref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_saved_stories"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/robotoslab_semibold"
+                android:text="App Preferences"
+                android:textColor="#AC1916" />
+
+            <LinearLayout
+                android:id="@+id/ll_edition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_app_pref"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:text="Edition"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="International"
+                    android:textColor="#5A5A59" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_edition"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Alerts"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_alerts"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Android Notification Settings"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_send_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_notification"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_material_keyboard_arrow_right"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Send Feedback"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_privacy"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_material_keyboard_arrow_right"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="FAQ's"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_send_feedback"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_material_keyboard_arrow_right"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Privacy &amp; Policy"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_send_feedback"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_material_keyboard_arrow_right"
+                    android:fontFamily="@font/lato_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#18707070" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

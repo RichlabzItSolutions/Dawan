@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="#805A5A59"
+        android:fontFamily="@font/encodesans_medium"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_alignParentEnd="true"
+        android:text="December 13, 2023" />
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sample4"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/video_play_icon" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_9sdp"
+        android:textColor="#805A5A59"
+        android:fontFamily="@font/encodesans_medium"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/tv_save"
+        android:layout_alignBottom="@id/tv_save"
+        android:gravity="center"
+        android:layout_below="@id/rl_img"
+        android:text="WARAR" />
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="#805A5A59"
+        android:fontFamily="@font/encodesans_medium"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/rl_img"
+        android:drawableRight="@drawable/baseline_bookmark_border_24"
+        android:drawableTint="#7B7B7A"
+        android:gravity="center"
+        android:drawablePadding="@dimen/_3sdp"
+        android:text="" />
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_save"
+        android:text="Soomaaliya oo heshiis dhanka taageerada ciidamada la gashay UNSOS iyo ATMIS"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#000000"
+        android:fontFamily="@font/robotoslab_semibold"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_9sdp"/>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_heading"
+        android:text="New York (Dawan)- Dowladda Soomaaliya ayaa heshiis dhanka taageerada saadka qeyb ka mid ah Ciidamada Amniga Soomaaliya la gashay xafiiska Qarmada Midoobay u qaabilsan..."
+        android:textSize="@dimen/_9ssp"
+        android:textColor="#805A5A59"
+        android:fontFamily="@font/lato_regular"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:paddingBottom="@dimen/_7sdp"/>
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/tv_desc"
+        android:background="#18707070"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"/>
+    <com.dawan.utils.CustomRecyclerView
+        android:id="@+id/rv_subnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"/>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Dawan" parent="Theme.MaterialComponents.Light.NoActionBar">
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">#AD1916</item>
+        <item name="android:statusBarColor">#AD1916</item>
+        <item name="colorAccent">#AD1916</item>
+<!--        <item name="android:navigationBarColor">#AD1916</item>-->
+        <item name="backgroundColor">#ffffff</item>
+
+    </style>
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+    <style name="Theme.Dawan" parent="Base.Theme.Dawan" />
+
+
+
+
+
+</resources>

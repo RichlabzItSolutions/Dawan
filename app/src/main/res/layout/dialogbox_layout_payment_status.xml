@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/closePaymentStatusId"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+
+
+    <ImageView
+        android:id="@+id/PaymentStatusId"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_succesfull" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/Liner">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PaymentStatusMessage"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Enter Mobile Number"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#E4364B" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/PaymentStatusDescription"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:text="Enter Mobile Number"
+            android:textSize="14sp"
+            android:textColor="#242424" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

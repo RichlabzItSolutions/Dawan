@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.Dawan" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#AD1916</item>
+        <item name="android:statusBarColor">#AD1916</item>
+        <item name="colorAccent">#AD1916</item>
+        <!--        <item name="android:navigationBarColor">#AD1916</item>-->
+        <item name="backgroundColor">#ffffff</item>
+
+        <item name="android:windowSplashScreenIconBackgroundColor">#AD1916</item>
+<!--        <item name="android:windowSplashScreenAnimationDuration">1</item>-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/circle</item>
+        <item name="android:windowSplashScreenBackground">#AD1916</item>
+
+    </style>
+</resources>

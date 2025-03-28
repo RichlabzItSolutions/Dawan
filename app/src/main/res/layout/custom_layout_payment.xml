@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/closeId"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/Liner">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Payable Amount: "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/paybleAmoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="50 USD"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#AD1916" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/masterCardId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingLeft="@dimen/_12sdp"
+        android:text="Pay With Mastercard"
+        android:background="@drawable/custom_tab_indicator"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/evcID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/custom_tab_indicator"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:text="Pay With EVC"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+
+
+   <!-- <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/okay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text="Okay"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/cancel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/okay_text"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:textSize="30sp" />
+
+    </RelativeLayout>-->
+
+</LinearLayout>
